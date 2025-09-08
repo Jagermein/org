@@ -1,0 +1,86 @@
+:PROPERTIES:
+:ID:       9273dbd7-3208-4bfe-9496-681bbfc2342a
+:END:
+#+title: 2509_LMOC_GTRI
+#+last_edited: <2025-09-04 Thu>
+
+* GTRI LMOC Schedule
+** LMOC 101
+*** Line Up
+*** LMOC Console
+*** CTDs
+*** CRTO/@Sam
+** LMOC v1.7
+** RAPID Req
+** DB Discussion
+*** Current Approach
+*** Comprehensive
+*** Multi Use Codes
+*** Read/Write
+
+
+* LMOC 101
+** TENA
+:PROPERTIES:
+:ID:       715266b2-8959-4ec3-96e7-aab381417032
+:END:
+*** Way for other applciations can be used to get data
+*** Has a cross-domain solution
+*** Common Operating Picture (COP)
+*** service based
+*** TSPI providers
+**** Can also take radar to make tspi
+*** FUZE track, can provide the best source to that track
+**** QUESTION : what is considered best source
+*** PRISM : Multi level security solution
+*** LUCI : Line Up Information Card
+*** RITA : Real Time Analysis 'Shot Sheet'
+*** BLAST : Used to get data form DIS
+*** DOTT : Data Object Transformation Tool
+** LMOC VMs
+*** Went over the VMs lightly. Each VM is like a service?
+** QUESTION : When they are flying events, how does it know when events are? do you need to start/stop it?
+
+* LMOC v1.7
+** RTO functions will be containerized within one event/mission
+** TSPI data is nasty sometimes
+
+* RAPID Req
+** PRISM status with our Markers
+*** How/what is needed for us to push Markers to their DB with PRISM in mind.
+**** QUESTION : What is needed or the PRISM aware marker?
+** One thing that was coming up was the fact on what are we going to share.
+*** This comes into if we are placing into their DB or if they are grabbing things from us.
+*** This is a bigger quesiton with Bob and I don't believe we will be giving, but they can get it via sharing.
+*** QUESTION : If we are sharing what is to stop them from just grabbing it. We want to play and integrate but what is too much
+
+* DB Structure talking
+** Talks about TENA, and making DB efficient?
+*** Unsure what is truly being talked about.
+*** Are they talking about the DB efficiency of a DB read/write or what
+*** They are talking about TENA storing everything, and also how to integrate the data that is *not* TENA data objects?
+*** SQL is being talked about and stuff
+*** POSTGRES with JSON streamer
+*** Using MetaData to speed up the querying
+*** Time to Create to create the briefing db
+*** looking for a commitment to aid with the DB
+*** Recording Live data, messy then clean it up afterwards for getting data
+*** They are talking about other things such as how to make it quick and the correct data?
+
+* Talking about DB Structures
+** They are talking about pushing RAPID stuff
+*** I do not think we are pushing to the DB ever?
+** Taking data via DOTT or something else?
+** QUESTION : What is TIDE and Flyout Source
+** TIDE : Being used as a service broker? Still unsure what this is actually doing
+*** TIDE handling the piecemill
+** TIDE handling the verisoning and tagging
+** ARCADB is mainly used for PRISM and a multi-level security system
+*** This is mainly used at a high lievel to access data, and the context allows the users to be unaware of the other data that is within there
+*** Likely what I was thinking about, but it is going to be context on the security rather than the type of data
+
+* ARCADB / TIDE/ Talking
+** TIDE
+*** Will be a data broker to the ARCADB
+*** PRISM 1.5 for LMOC 1.7
+***

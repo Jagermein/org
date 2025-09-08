@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       2ca1e0f6-bf1f-4a61-a680-b263dea95426
+:END:
+#+title: contextual forms
+#+filetags: react-hook-form context forms blueprintjs
+
+* Overview
+This note describes how the app handles complex forms using `react-hook-form` (RHF) and a shared wrapper component called `ContextualForm`.
+
+Instead of calling `useForm()` in each field component (which would create multiple isolated forms), the app wraps all form content in a shared `ContextualForm`, allowing nested components to access the same form state via `useFormContext()`.
+
+* ContextualForm Component
+** Purpose
+Creates a single RHF form context and provides it to all nested components.
+
+** Key Behaviors
+- Accepts =defaultValue= or =values= for form initialization.
+- Automatically resets form state when =defaultValue= changes (if =shouldReset= is true).
+- Can trigger =onSubmit= on =change= or =submit= depending on =type=.
+- Wraps children in =FormProvider=, allowing access to RHF context using =useFormContext()=.
+
+** Code Reference
+[[file:~/your-path-to/contextualForm.js]]
+
+* useForm vs useFormContext
+** useForm
+- Only used in the top-level =ContextualForm=.
+- Creates the main form instance.
+- Should NOT be used in nested components (would create disconnected state).
+
+** useFormContext
+- Used in all children under =ContextualForm=.
+- Accesses the shared form state.
+- Enables registering fields, watching values, and using validation.
+
+* Why not use useForm everywhere?
+- Would create multiple form contexts and break form state.
+- Only one form context should exist — provided via =FormProvider=.
+- Best practice is to call =useForm()= once and access it with =useFormContext()=.
+
+* Controlled Selects and useEffect
+- If setting a default value in a dropdown, use =setValue(...) + watch(...) + value= binding.
+- Avoid setting state inline during render; use =useEffect= for that.
+
+* Example Pattern
+#+begin_src jsx
+const { register, setValue, watch } = useFormContext();
+const selected = watch('service');
+
+useEffect(() => {
+  if (initialService) {
+    setValue('service', initialService);
+  }
+}, [initialService, setValue]);
+
+<HTMLSelect {...register('service')} value={selected}>
+  {!initialService && <option value=''>Select service...</option>}
+  <option value='USN'>USN</option>
+  ...
+</HTMLSelect>
+#+end_src
+#+last_edited: <2025-07-14 Mon>

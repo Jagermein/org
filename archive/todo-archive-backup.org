@@ -1,0 +1,73 @@
+#+title: TODO LIST
+#+author: Chance Norris PhD
+#+description: completed tasks
+#+created: <2024-12-05 Thu>
+#+last_edited: <2024-12-09 Mon>
+
+* WORK
+** DAILY
+*** DONE : Get plan of action for Analytics page
+   CLOSED: <2024-12-05 Thu>
+*** DONE : Try and get one plot inside the analytics portion
+   DEADLINE: <2024-12-09 Mon>
+   CLOSED: <2024-12-06 Fri>
+   DEADLINE_PERFORMANCE: COMPLETED EARLY by 3 days
+*** DONE : Drop down for adding new plots into the dashboard.
+   CLOSED: <2025-01-06 Mon>
+*** DONE : Ability to cancel the plots that are up
+   CLOSED: <2025-01-07 Tue>
+*** DONE : Meet with Bob for Performance review.
+   DEADLINE: <2025-01-08 Wed>
+   CLOSED: <2025-01-07 Tue>
+   DEADLINE_PERFORMANCE: COMPLETED EARLY by 1 days
+*** DONE : Create the skeleton of the Dashboard component.
+   DEADLINE: <2025-03-10 Mon>
+   CLOSED: <2025-03-12 Wed>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 2 days
+*** DONE : Get reducer in action for dashbaord layout.
+   DEADLINE: <2025-03-18 Tue>
+   CLOSED: <2025-04-10 Thu>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 23 days
+*** DONE : Integrate Left side of navigation.
+   DEADLINE: <2025-03-21 Fri>
+   CLOSED: <2025-04-10 Thu>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 20 days
+* PERSONAL
+** DAILY
+*** DONE : Get VISA, Train tickets, and activte global entry cards
+   CLOSED: <2024-12-05 Thu>
+*** DONE : Finalize TODO list archiving
+   CLOSED: <2024-12-05 Thu>
+*** DONE : Clean pottery for glazing tomorrow
+   CLOSED: <2024-12-05 Thu>
+*** DONE : Get new mouse at BestBuy
+   CLOSED: <2024-12-06 Fri>
+*** DONE : Finish the firing of the mugs
+   CLOSED: <2024-12-11 Wed>
+*** DONE : Send them out via USPS
+   DEADLINE: <2024-12-10 Tue>
+   CLOSED: <2024-12-11 Wed>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 1 days
+*** DONE : Start cleaning the kitchen for Germany trip
+   CLOSED: <2024-12-30 Mon>
+*** DONE : Put away PC
+   CLOSED: <2025-01-02 Thu>
+** MONTHLY
+*** DONE : Get the gift for secret santa sent out for delivery
+   DEADLINE: <2024-12-09 Mon>
+   CLOSED: <2025-01-07 Tue>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 29 days
+*** DONE : Plan the Germany trip out before we leave
+   DEADLINE: <2024-12-08 Sun>
+   CLOSED: <2025-01-07 Tue>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 30 days
+*** DONE : create a ORG-ROAM database on the processes throughout my journey of the analytics page
+   DEADLINE: <2025-03-15 Sat>
+   CLOSED: <2025-03-12 Wed>
+   DEADLINE_PERFORMANCE: COMPLETED EARLY by 3 days
+*** DONE : Try and get ORG-ROAM set up for personal useage as well as planner/journal set up.
+   DEADLINE: <2025-03-15 Sat>
+   CLOSED: <2025-03-12 Wed>
+   DEADLINE_PERFORMANCE: COMPLETED EARLY by 3 days
+*** DONE :
+   CLOSED: <2025-04-15 Tue>
