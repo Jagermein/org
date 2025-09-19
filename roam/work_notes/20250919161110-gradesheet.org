@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       12137b1c-57e4-44e8-93f1-260ad7133543
+:END:
+#+title: Gradesheet
+#+last_edited: <2025-09-19 Fri>
+
+
+* What is a [[id:12137b1c-57e4-44e8-93f1-260ad7133543][Gradesheet]]?
+** Objectives of a [[id:12137b1c-57e4-44e8-93f1-260ad7133543][Gradesheet]]
+*** The amin objective is tpo be able to report data based on datasets. This differs from the dashboard in a few ways. The dashbaord give similar dat, but is less user definable. As in the [[id:12137b1c-57e4-44e8-93f1-260ad7133543][Gradesheet]] is able to specify various fields on from the markers. BUT this can also give insights based on certain fields as well.
+*** These user specified fields, allow users to (for MVP) choose the numerator and the denominator for form the markers. Now these are base don either Marker's as a whole or the fields within.
+**** Issues for MVP, we cannot have cross-domain marker fields. (ie no AIM-120 v AIM-9 markers).
+**** The issues above will be able to occur but i need to think about this in more depth to see the logic that would bet allow for this comparison.
+***

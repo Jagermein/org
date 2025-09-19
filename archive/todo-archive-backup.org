@@ -32,6 +32,14 @@
    DEADLINE: <2025-03-21 Fri>
    CLOSED: <2025-04-10 Thu>
    DEADLINE_PERFORMANCE: COMPLETED LATE by 20 days
+*** DONE : Meeting about gradesheets with Andy and Candice
+   DEADLINE: <2025-09-05 Fri>
+   CLOSED: <2025-09-19 Fri>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 14 days
+*** DONE : Complete PSQs
+   DEADLINE: <2025-09-05 Fri>
+   CLOSED: <2025-09-19 Fri>
+   DEADLINE_PERFORMANCE: COMPLETED LATE by 14 days
 * PERSONAL
 ** DAILY
 *** DONE : Get VISA, Train tickets, and activte global entry cards

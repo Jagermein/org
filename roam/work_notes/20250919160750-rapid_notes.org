@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       ed7be83f-6ded-46a2-aae9-18eb1b179734
+:END:
+#+title: RAPID_notes
+#+last_edited: <2025-09-19 Fri>
+
+
+* Top notes for RDA
+** RDA todos:
+*** I need to create documentation for the RDA team.
+*** I also need to begin to generate the overall workflow for the gradesheets
+*** Define what the main goals are for the gradesheets
