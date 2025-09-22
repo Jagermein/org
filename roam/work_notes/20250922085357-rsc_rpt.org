@@ -1,0 +1,67 @@
+:PROPERTIES:
+:ID:       5439ab5e-4175-4984-982f-2c9552a4b266
+:END:
+#+title: RSC-RPT
+#+last_edited: <2025-09-22 Mon>
+
+
+
+
+* Question for 250923 Meeting
+** [[id:12137b1c-57e4-44e8-93f1-260ad7133543][Gradesheet]]
+*** What you think the ask is (ideas/concepts would be helpful)
+**** To create a user defined [[id:12137b1c-57e4-44e8-93f1-260ad7133543][Gradesheet]].
+**** This needs to be able to be nearly 100% customizable
+**** Ability ot choose num/denom
+**** Be more than a reporting tool
+***** Ability to dive into stats easily to help epxlain the 'whys'
+**** Exportable data
+***** PDF/Excel formatting. Excel 4 their own viz, PDF for ours
+**** Dataset query
+*** How you think you will accomplish the initiative (include multiple COAs if appropriate)
+**** MVP
+***** Numerator Demoninator choice
+***** Customizable field additions
+***** Ability to move around the 'metrics'
+***** Dataset addiiton
+**** Phase 1
+***** Diving into the 'why'
+***** Picking the metric, and expandables that dive into the stats
+**** Phase 2
+***** More indepth metrics.
+***** NTA/Skills/MOE/MOP
+***** 'Possible' Adding 'math' into the metrics
+****** QUESTION : 'math' needs to be though about. LIkely is meaning something along the lines more of logic within the metric itself? More of an || && type of thing rather than a + - x / type of math.
+**** Phase 3+
+***** TBD, as time proceeds and more ideas flush through.
+*** Estimated time to complete the initiative
+**** MVP - 1-2 months (err on the side of 2)
+**** Phase 1 - early 2026
+**** Phase 3 - Unsure with a few of the metrics. Can estimate Q2 2026?
+*** What resources you need to start work on the initiative
+**** None to start.
+**** For Phase 3, there will be a lot of collaboration with the WSD and Analytics team. This is mainly for how rigorous and built up the MOE/MOP/NTA/Skills are. Talking with Puffy, currently they are more mature than i initially thought. But we need to get a plan of attack in order to make sure it is flushed out.
+*** Questions you have that preclude answers to the above
+**** N/A
+
+** [[id:07a03fb5-859b-43bd-aa51-e05946941e9a][Dashboard]]
+*** What you think the ask is (ideas/concepts would be helpful)
+**** to create a user defined dashbaord that a user can define the layout.
+**** Also to be able ot create user defined plots, with a preview
+**** Plots to be able ot be used throughout RAPID
+**** Have it similar to what BI tools are, but for RAPID users
+***** This means easier to use, and more tailored experience so there is a smaller learning curve.
+*** How you think you will accomplish the initiative (include multiple COAs if appropriate)
+**** MVP is completed
+***** MVp included the ability to create the dashboad and custom plots.
+**** Phase 1 is underway
+***** More plots to be able to be used
+***** Also ability for more customizaiton with the plots
+**** Phase 2 is TBD
+*** Estimated time to complete the initiative
+**** Mostly completed
+**** Phase 1+ is underway. Plots include Bubble, Heatmap, Contours.
+***** Phase 1+ also includes imporoved filtering for dropdowns
+***** What is needed here is more understanding on the databases/marker structure. Which I am getting from Standards via Andy.
+*** Questions you have that preclude answers to the above
+**** N/A
