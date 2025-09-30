@@ -2,7 +2,7 @@
 :ID:       5439ab5e-4175-4984-982f-2c9552a4b266
 :END:
 #+title: RSC-RPT
-#+last_edited: <2025-09-26 Fri>
+#+last_edited: <2025-09-30 Tue>
 
 
 
@@ -18,6 +18,8 @@
 **** Exportable data
 ***** PDF/Excel formatting. Excel 4 their own viz, PDF for ours
 **** Dataset query
+**** Answers coming from WSD
+****
 *** How you think you will accomplish the initiative (include multiple COAs if appropriate)
 **** MVP
 ***** Numerator Demoninator choice
@@ -35,7 +37,7 @@
 **** Phase 3+
 ***** TBD, as time proceeds and more ideas flush through.
 *** Estimated time to complete the initiative
-**** MVP - 1-2 months (err on the side of 2)
+**** MVP - 1-1.5 months (err on the side of 2)
 **** Phase 1 - early 2026
 **** Phase 3 - Unsure with a few of the metrics. Can estimate Q2 2026?
 *** What resources you need to start work on the initiative

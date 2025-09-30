@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       00daa17d-2335-4af7-9d13-1ad862f51b0e
+:END:
+#+title: Gradesheet Creator
+#+last_edited: <2025-09-30 Tue>
+
+
+
+* Data Picking (Left Side)
+** Data Picker will send the data via a form into the dataForm which will show all data in collapsable form where they can rearrange order
+** The data that will be shown in the Data Picker
+*** Category : String
+*** Marker Type : Id
+*** Marker Feild : Id
+*** Marker Field Type | 'Total' : String
+*** labels : String
+** The Data will have the format of the numerator/denominator type. Along with a label
+** We need the data to be sent over as a metric
+*** A Metric is just the numerator and denominator that the user chooses.
+** Once this is sent over the picker resets
+
+
+* Data Form
+** The data form is what the user will be able to choose the order of everything.
+** THIS WILL BE THE FINAL PUSH TO DB
+** The categories and the metrics need to be able to be changed around. This requires drag and drop capabilities to occur.
+** The format is :
+*** { { Categories { Metric Id } } Metrics { MetricObj } }
+*** This is containing the orders and the MetricIds, it will then contain all the information of the metrics that the first portion will reference.
+** The Data Form Needs the ability to have the following Handles (@ First Glance)
+*** Order States
+*** Removing Metric
+*** Collapse States (Category and Metric?)
+**** QUESTION : Do we want category to collapse initially? I mean we don't really need it IMO. But we still might need some container to hold nested collapsible things
+*** Dragging? | dependent on the React DnD setup
+***  nrf
