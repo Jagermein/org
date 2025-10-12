@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       97d2497b-d56d-4763-86d6-51ca8d6b3d2c
-:END:
-#+title: testing_Forever
-#+last_edited: <2025-10-11 Sat>
-

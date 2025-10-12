@@ -1,6 +1,0 @@
-:PROPERTIES:
-:ID:       671478bb-26ab-497b-a684-edfff2e67482
-:END:
-#+title: 001
-#+last_edited: <2025-10-11 Sat>
-
