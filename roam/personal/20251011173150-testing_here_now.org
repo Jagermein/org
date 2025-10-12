@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       f2bb3fd4-9cf6-4046-9cab-d04248f934e5
+:END:
+#+title: testing_here_now
+#+last_edited: <2025-10-11 Sat>
+
