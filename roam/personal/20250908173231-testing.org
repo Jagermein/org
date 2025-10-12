@@ -12,4 +12,3 @@
 :END:
 ** One
 ** Two
-** Three
