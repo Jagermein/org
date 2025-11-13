@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       315f3f61-3fd3-4de2-8f13-7c91cbd81338
+:END:
+#+title: v3.9.16-rc
+#+last_edited: <2025-11-10 Mon>
+
+
+
+
+* Bugs
+** Dashboard
+*** Bug 1:
+- Recreation steps
+  - Open a new dashabord
+  - Create a plot (or use existing)
+  - Remove plot
+  - Change dataset
+  - Last added plot will repopulate in dashboard
+- Potential fixes
+  - Likely a stale state
+  - Try to see if I am reading in via Redux or some other method
+  - Also can be issue with removing plots function. Need to update redux and the use redux for all Dashboards?
+- Scripts that are impacted
+  - Likely just in Dashboard and PlotGrid.
+*** QOL 1:
+- Console logging on plot changes (ie config)
+- FIX : remove the logging
+*** Bug 2:
+- Recreation steps
+  - Create just ONE plot
+  - Click on plot but do not add
+  - Delete said plot
+  - Plot will persist in the drop down
+- Potential fixes
+  - Likely default value upon deletion needs to be reset
+  - Not sure why this is happening with just one plot
+*** QOL 2:
+- Modify tooltip is persisting for some reason
+*** QOL 3:
+- Adding the type of plots within the Modify plot window
