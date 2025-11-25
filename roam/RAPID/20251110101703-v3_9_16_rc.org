@@ -49,4 +49,6 @@
 - This likley is a Candice issue, but for something later.
 ** Database coloring was off in Candice DB
 - Unsure where this is happening. On my branch it is working, so unsure if it was the DB that we were working with.
-- My actual DB and branch was working in a way where we are actually forcing it,
+- My actual DB and branch was working in a way where we are actually forcing it.
+** working on bar plot
+- working with bin #'s or also numerical values right now.
