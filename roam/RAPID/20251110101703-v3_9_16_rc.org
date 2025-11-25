@@ -2,7 +2,7 @@
 :ID:       315f3f61-3fd3-4de2-8f13-7c91cbd81338
 :END:
 #+title: v3.9.16-rc
-#+last_edited: <2025-11-24 Mon>
+#+last_edited: <2025-11-25 Tue>
 
 
 
@@ -49,4 +49,4 @@
 - This likley is a Candice issue, but for something later.
 ** Database coloring was off in Candice DB
 - Unsure where this is happening. On my branch it is working, so unsure if it was the DB that we were working with.
-- My actual DB and branch was working in a way where we are actually forcing it.
+- My actual DB and branch was working in a way where we are actually forcing it,
