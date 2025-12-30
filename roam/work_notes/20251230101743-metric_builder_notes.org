@@ -18,7 +18,7 @@ The Database structure section will go over what our current DB structure looks 
 :PROPERTIES:
 :ID:       d06cb504-f19e-49df-bc51-1ce3d18a7d6b
 :END:
-Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [[id:d4fdfb91-f603-4a81-bfaa-06b498c49505][events]]. These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
+Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as events. These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
 
 - id [uuid] : unique id for the airspace
 - name [string] : name for the airspace
