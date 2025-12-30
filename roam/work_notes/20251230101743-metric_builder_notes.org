@@ -18,19 +18,29 @@ The Database structure section will go over what our current DB structure looks 
 :PROPERTIES:
 :ID:       d06cb504-f19e-49df-bc51-1ce3d18a7d6b
 :END:
-Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as events. These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
+Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [[id:d4fdfb91-f603-4a81-bfaa-06b498c49505][events]]. These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
 
 - id [uuid] : unique id for the airspace
 - name [string] : name for the airspace
 - actual_environment [string] : this is specifying if the environment is actually over land or sea. we say actual because they can simulate something different.
 - targets[{{}}] : an object of objects that specify the name, location of targets that are in the airspace. this is usually specified for stationary targets that persist in the airspace/range.
+
+
 ** events
 :PROPERTIES:
 :ID:       d4fdfb91-f603-4a81-bfaa-06b498c49505
 :END:
-Events is where we are storing each event that has occured. An event is what is made in the event page, where users specify the syllabi, location, threat levels, and many other aspects. An event is unique, but it can repeat. This can happen say if an AWF has a refly, or a SQDN wants to practice the same exact event. This also occurs often within virtual and constructive scenarios. It is advised and highly recommended that each event is unique for analysis purposes. [[id:d06cb504-f19e-49df-bc51-1ce3d18a7d6b][airspace]].
+Events is where we are storing each event that has occured. An event is what is made in the event page, where users specify the syllabi, location, threat levels, and many other aspects. An event is unique, but it can repeat. This can happen say if an AWF has a refly, or a SQDN wants to practice the same exact event. This also occurs often within virtual and constructive scenarios. It is advised and highly recommended that each event is unique for analysis purposes.
 
 - id [uuid] : unique id for the event.
 - event [string] : the name the user gave the event
 - time [int] : time of the event, the units are timeSinceEpoch. So ms since 01-01-1970.
 - airspaceId [uuid] : reference id from airspace.
+- airspaceName [string] : reference to the airspace name
+
+
+** aircraft
+:PROPERTIES:
+:ID:       ecb85eeb-4e60-4b42-ab6b-6c11153b8dd7
+:END:
+here we are now going to test [[id:d06cb504-f19e-49df-bc51-1ce3d18a7d6b][airspace]] and [[id:d4fdfb91-f603-4a81-bfaa-06b498c49505][events]] references.
