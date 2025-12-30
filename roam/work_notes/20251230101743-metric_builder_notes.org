@@ -16,7 +16,7 @@ The Database structure section will go over what our current DB structure looks 
 
 ** airspace
 :PROPERTIES:
-:ID:       abdf625e-e715-442a-8148-4139b4d6e76c
+:ID:       d06cb504-f19e-49df-bc51-1ce3d18a7d6b
 :END:
 Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [[id:d4fdfb91-f603-4a81-bfaa-06b498c49505][events]]. These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
 
@@ -35,4 +35,4 @@ Events is where we are storing each event that has occured. An event is what is 
 - id [uuid] : unique id for the event.
 - event [string] : the name the user gave the event
 - time [int] : time of the event, the units are timeSinceEpoch. So ms since 01-01-1970.
-- airspaceId [uuid] : reference id from [[id:abdf625e-e715-442a-8148-4139b4d6e76c][airspace]].
+- airspaceId [uuid] : reference id from [[id:d06cb504-f19e-49df-bc51-1ce3d18a7d6b][airspace]].
