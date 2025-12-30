@@ -24,13 +24,11 @@ Airspace is exactly what it sounds like. This is the airspace that users have al
 - name [string] : name for the airspace
 - actual_environment [string] : this is specifying if the environment is actually over land or sea. we say actual because they can simulate something different.
 - targets[{{}}] : an object of objects that specify the name, location of targets that are in the airspace. this is usually specified for stationary targets that persist in the airspace/range.
-
-
 ** events
 :PROPERTIES:
 :ID:       d4fdfb91-f603-4a81-bfaa-06b498c49505
 :END:
-Events is where we are storing each event that has occured. An event is what is made in the event page, where users specify the syllabi, location, threat levels, and many other aspects. An event is unique, but it can repeat. This can happen say if an AWF has a refly, or a SQDN wants to practice the same exact event. This also occurs often within virtual and constructive scenarios. It is advised and highly recommended that each event is unique for analysis  [[id:d06cb504-f19e-49df-bc51-1ce3d18a7d6b][airspace]] purposes.
+Events is where we are storing each event that has occured. An event is what is made in the event page, where users specify the syllabi, location, threat levels, and many other aspects. An event is unique, but it can repeat. This can happen say if an AWF has a refly, or a SQDN wants to practice the same exact event. This also occurs often within virtual and constructive scenarios. It is advised and highly recommended that each event is unique for analysis purposes. [[id:d06cb504-f19e-49df-bc51-1ce3d18a7d6b][airspace]].
 
 - id [uuid] : unique id for the event.
 - event [string] : the name the user gave the event

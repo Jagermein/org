@@ -1,36 +1,32 @@
 
 # Table of Contents
 
-1.  [Database Structure](#orgd7f0585)
-    1.  [airspace](#orgf43aae5)
-    2.  [events](#orgd12f691)
+1.  [Database Structure](#orgad3ca59)
+    1.  [airspace](#org0eaaada)
 
 
 
-<a id="orgd7f0585"></a>
+<a id="orgad3ca59"></a>
 
 # Database Structure
 
 The Database structure section will go over what our current DB structure looks like. This will go over the data types, as well as the tables. Within each table, there can be sections/columns/etc. that are called into another, which will will try to highlight here.
 
 
-<a id="orgf43aae5"></a>
+<a id="org0eaaada"></a>
 
 ## airspace
 
-Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [events](20251230101743-metric_builder_notes.md). These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
+Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [events](20251230101743-metric_builder_notes.md). These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change) [airspace](#org0eaaada) .
 
 -   id [uuid] : unique id for the airspace
 -   name [string] : name for the airspace
 -   actual<sub>environment</sub> [string] : this is specifying if the environment is actually over land or sea. we say actual because they can simulate something different.
 -   targets[{{}}] : an object of objects that specify the name, location of targets that are in the airspace. this is usually specified for stationary targets that persist in the airspace/range.
 
+[events](20251230101743-metric_builder_notes.md)events
 
-<a id="orgd12f691"></a>
-
-## events
-
-[events](20251230101743-metric_builder_notes.md)
+:ID:       d4fdfb91-f603-4a81-bfaa-06b498c49505
 
 Events is where we are storing each event that has occured. An event is what is made in the event page, where users specify the syllabi, location, threat levels, and many other aspects. An event is unique, but it can repeat. This can happen say if an AWF has a refly, or a SQDN wants to practice the same exact event. This also occurs often within virtual and constructive scenarios. It is advised and highly recommended that each event is unique for analysis purposes.
 
