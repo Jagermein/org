@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       8c46f3d3-2b5b-448b-8c1e-9513bdf8f159
+:END:
+#+title: Metric Builder Notes
+#+last_edited: <2025-12-30 Tue>
+
+
+
+
+* Database Structure
+:PROPERTIES:
+:ID:       6635314d-03b2-4974-ae05-92bef04d663f
+:END:
+
+The Database structure section will go over what our current DB structure looks like. This will go over the data types, as well as the tables. Within each table, there can be sections/columns/etc. that are called into another, which will will try to highlight here.
+
+**
