@@ -43,4 +43,20 @@ Events is where we are storing each event that has occured. An event is what is 
 :PROPERTIES:
 :ID:       ecb85eeb-4e60-4b42-ab6b-6c11153b8dd7
 :END:
-here we are now going to test [[id:d06cb504-f19e-49df-bc51-1ce3d18a7d6b][airspace]] and [[id:d4fdfb91-f603-4a81-bfaa-06b498c49505][events]] references.
+Aircraft is self explainatory. This is where users created aircraft are stored. They create aircraft based on what they are flying, which is specified (via USN) with BUNO. Side numbers can be replicated and are not useful for complete identification.
+
+- id [uuid] : unique id for the aircraft.
+- buno [string] : again a unique identifier, though this is one that aircrew and maintenence personelle are familiar with.
+- side [string] : side number, unique for SQDN's but differing SQDN's can have the same side numbers.
+- squadron [string] : the squadron that the plane currently belongs too at the time. This can change.
+- service [string] : which service the plane belongs too.
+- tms [string] : the type of aircraft (tms is navy specific, airforce uses MDS).
+- software [string] : the software the tms/mds is using.
+
+** MarkerType
+:PROPERTIES:
+:ID:       59bc3a5e-a399-4187-bd81-267df8580f0a
+:END:
+Marker Types are the bread and butter of RAPID. Types are made up of fields, which we will go over in depth later. MarkerTypes are what is `placed` during an event, and is what TAP/aircrew use to evaluate performance for a given skill. Though markerTypes should not be thought of directly as skills, but mainly markers mark a specific point in time. Meaning we can mark a death/kill/skill/learning stamp/etc.
+
+- id [uuid] : unique id for the markerType.
