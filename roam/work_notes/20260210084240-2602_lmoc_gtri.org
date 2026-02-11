@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       1a87ad0d-1442-4e11-ad35-201aa6d80113
+:END:
+#+title: 2602_LMOC_GTRI
+#+last_edited: <2026-02-10 Tue>
+
+
+* Goals for this week
+Chad Rose is the main talker right now (mustache guide).
+- Get the DB installed
+- DARK TIDES ADDY integration and how RAPID can read those
+- Talks with Angel
+- What it looks like for 3rd parties to read into the DB
+  - Working with ADDY (?) some
+- TIDE is PRISM TENA applications
+- ADDY is a dotnet interface to the ARCA DB
+  - C-sharp class library
+
+
+*
