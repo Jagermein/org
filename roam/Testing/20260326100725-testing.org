@@ -1,0 +1,12 @@
+#+last_edited: <2026-03-26 Thu>
+:PROPERTIES:
+:ID:       9061c887-251a-4250-9231-825849c4f39b
+:END:
+#+title: testing
+#+title: 20260326100725-testing
+#+author: Chance Norris PhD
+#+description:
+#+created: <2026-03-26 Thu>
+
+
+* Here i am testing the exporting and git status
