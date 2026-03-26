@@ -1,8 +1,11 @@
+#+author: Chance Norris PhD
+#+description:
+#+created: <2026-03-26 Thu>
 :PROPERTIES:
 :ID:       8c46f3d3-2b5b-448b-8c1e-9513bdf8f159
 :END:
 #+title: Metric Builder Notes
-#+last_edited: <2025-12-30 Tue>
+#+last_edited: <2026-03-26 Thu>
 
 
 

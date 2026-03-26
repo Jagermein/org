@@ -1,8 +1,11 @@
+#+author: Chance Norris PhD
+#+description:
+#+created: <2026-03-26 Thu>
 :PROPERTIES:
 :ID:       1a87ad0d-1442-4e11-ad35-201aa6d80113
 :END:
 #+title: 2602_LMOC_GTRI
-#+last_edited: <2026-02-10 Tue>
+#+last_edited: <2026-03-26 Thu>
 
 
 * Goals for this week

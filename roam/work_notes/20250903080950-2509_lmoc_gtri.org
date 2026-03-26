@@ -1,8 +1,11 @@
+#+author: Chance Norris PhD
+#+description:
+#+created: <2026-03-26 Thu>
 :PROPERTIES:
 :ID:       9273dbd7-3208-4bfe-9496-681bbfc2342a
 :END:
 #+title: 2509_LMOC_GTRI
-#+last_edited: <2025-10-13 Mon>
+#+last_edited: <2026-03-26 Thu>
 
 * GTRI LMOC Schedule
 ** LMOC 101

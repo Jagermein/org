@@ -1,2 +1,5 @@
 #+title: y qq
-#+last_edited: <2025-09-08 Mon>
+#+last_edited: <2026-03-26 Thu>
+#+author: Chance Norris PhD
+#+description:
+#+created: <2026-03-26 Thu>
