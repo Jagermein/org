@@ -1,26 +1,35 @@
+---
+title: #("Metric Builder Notes" 0 20 (fontified nil))
+layout: post
+date: 2026-03-26
+description: #("#+created: <2026-03-26 Thu>" 0 27 (ws-butler-chg chg wrap-prefix "" line-prefix "" fontified nil))
+categories: [Testing]
+---
+
 
 # Table of Contents
 
-1.  [Database Structure](#orgc5cfaca)
-    1.  [airspace](#org988c3f4)
-    2.  [events](#org604b106)
-    3.  [aircraft](#org43191d5)
-    4.  [MarkerType](#org12b1a69)
+1.  [Database Structure](#org5971488)
+    1.  [airspace](#orgec2ad49)
+    2.  [events](#org1393045)
+    3.  [aircraft](#org13a46bb)
+    4.  [MarkerType](#org4062692)
+
+:ID:       8c46f3d3-2b5b-448b-8c1e-9513bdf8f159
 
 
-
-<a id="orgc5cfaca"></a>
+<a id="org5971488"></a>
 
 # Database Structure
 
 The Database structure section will go over what our current DB structure looks like. This will go over the data types, as well as the tables. Within each table, there can be sections/columns/etc. that are called into another, which will will try to highlight here.
 
 
-<a id="org988c3f4"></a>
+<a id="orgec2ad49"></a>
 
 ## airspace
 
-Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [events](#org604b106). These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
+Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [events](#org1393045). These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
 
 -   id [uuid] : unique id for the airspace
 -   name [string] : name for the airspace
@@ -28,7 +37,7 @@ Airspace is exactly what it sounds like. This is the airspace that users have al
 -   targets[{{}}] : an object of objects that specify the name, location of targets that are in the airspace. this is usually specified for stationary targets that persist in the airspace/range.
 
 
-<a id="org604b106"></a>
+<a id="org1393045"></a>
 
 ## events
 
@@ -41,7 +50,7 @@ Events is where we are storing each event that has occured. An event is what is 
 -   airspaceName [string] : reference to the airspace name
 
 
-<a id="org43191d5"></a>
+<a id="org13a46bb"></a>
 
 ## aircraft
 
@@ -56,7 +65,7 @@ Aircraft is self explainatory. This is where users created aircraft are stored. 
 -   software [string] : the software the tms/mds is using.
 
 
-<a id="org12b1a69"></a>
+<a id="org4062692"></a>
 
 ## MarkerType
 
