@@ -1,158 +1,158 @@
 
 # Table of Contents
 
-1.  [Data Picking (Left Side)](#orgebfaf99)
-    1.  [Data Picker will send the data via a form into the dataForm which will show all data in collapsable form where they can rearrange order](#orgdf29f8d)
-    2.  [The data that will be shown in the Data Picker](#org7de13f8)
-        1.  [Category : String](#org6d44232)
-        2.  [Marker Type : Id](#org32adcd3)
-        3.  [Marker Feild : Id](#org918169d)
-        4.  [Marker Field Type | &rsquo;Total&rsquo; : String](#org84f0bef)
-        5.  [labels : String](#orgc07e8f3)
-    3.  [The Data will have the format of the numerator/denominator type. Along with a label](#org1ea0d6a)
-    4.  [We need the data to be sent over as a metric](#org5369e4d)
-        1.  [A Metric is just the numerator and denominator that the user chooses.](#org92a77c7)
-    5.  [Once this is sent over the picker resets](#org283418e)
-2.  [Data Form](#orgc422bb1)
-    1.  [The data form is what the user will be able to choose the order of everything.](#org966c188)
-    2.  [THIS WILL BE THE FINAL PUSH TO DB](#org5f1619a)
-    3.  [The categories and the metrics need to be able to be changed around. This requires drag and drop capabilities to occur.](#orge51eca1)
-    4.  [The format is :](#orgc73614c)
-        1.  [{ { Categories { Metric Id } } Metrics { MetricObj } }](#org34c514f)
-        2.  [This is containing the orders and the MetricIds, it will then contain all the information of the metrics that the first portion will reference.](#org1386f49)
-    5.  [The Data Form Needs the ability to have the following Handles (@ First Glance)](#org5ee0d65)
-        1.  [Order States](#org5f6657e)
-        2.  [Removing Metric](#org0ac164c)
-        3.  [Collapse States (Category and Metric?)](#orge66bec8)
-        4.  [Dragging? | dependent on the React DnD setup](#orga173584)
-        5.  [nrf](#org2527627)
+1.  [Data Picking (Left Side)](#org8c8ddc5)
+    1.  [Data Picker will send the data via a form into the dataForm which will show all data in collapsable form where they can rearrange order](#orgda79dba)
+    2.  [The data that will be shown in the Data Picker](#org9853b79)
+        1.  [Category : String](#org057ffdb)
+        2.  [Marker Type : Id](#orgfe13e28)
+        3.  [Marker Feild : Id](#org3e20442)
+        4.  [Marker Field Type | &rsquo;Total&rsquo; : String](#orgc04d476)
+        5.  [labels : String](#org691ed13)
+    3.  [The Data will have the format of the numerator/denominator type. Along with a label](#org9128dd0)
+    4.  [We need the data to be sent over as a metric](#orgfa434fc)
+        1.  [A Metric is just the numerator and denominator that the user chooses.](#org5e84da3)
+    5.  [Once this is sent over the picker resets](#org81c24bf)
+2.  [Data Form](#org96d8401)
+    1.  [The data form is what the user will be able to choose the order of everything.](#org399726b)
+    2.  [THIS WILL BE THE FINAL PUSH TO DB](#org123b21f)
+    3.  [The categories and the metrics need to be able to be changed around. This requires drag and drop capabilities to occur.](#org8e5133e)
+    4.  [The format is :](#orgc1b0b63)
+        1.  [{ { Categories { Metric Id } } Metrics { MetricObj } }](#orgc7d1530)
+        2.  [This is containing the orders and the MetricIds, it will then contain all the information of the metrics that the first portion will reference.](#org530127d)
+    5.  [The Data Form Needs the ability to have the following Handles (@ First Glance)](#orge3d841f)
+        1.  [Order States](#org7499098)
+        2.  [Removing Metric](#org9ba46a7)
+        3.  [Collapse States (Category and Metric?)](#orgc309140)
+        4.  [Dragging? | dependent on the React DnD setup](#org8a408be)
+        5.  [nrf](#org829f201)
 
 :ID:       00daa17d-2335-4af7-9d13-1ad862f51b0e
 
 
-<a id="orgebfaf99"></a>
+<a id="org8c8ddc5"></a>
 
 # Data Picking (Left Side)
 
 
-<a id="orgdf29f8d"></a>
+<a id="orgda79dba"></a>
 
 ## Data Picker will send the data via a form into the dataForm which will show all data in collapsable form where they can rearrange order
 
 
-<a id="org7de13f8"></a>
+<a id="org9853b79"></a>
 
 ## The data that will be shown in the Data Picker
 
 
-<a id="org6d44232"></a>
+<a id="org057ffdb"></a>
 
 ### Category : String
 
 
-<a id="org32adcd3"></a>
+<a id="orgfe13e28"></a>
 
 ### Marker Type : Id
 
 
-<a id="org918169d"></a>
+<a id="org3e20442"></a>
 
 ### Marker Feild : Id
 
 
-<a id="org84f0bef"></a>
+<a id="orgc04d476"></a>
 
 ### Marker Field Type | &rsquo;Total&rsquo; : String
 
 
-<a id="orgc07e8f3"></a>
+<a id="org691ed13"></a>
 
 ### labels : String
 
 
-<a id="org1ea0d6a"></a>
+<a id="org9128dd0"></a>
 
 ## The Data will have the format of the numerator/denominator type. Along with a label
 
 
-<a id="org5369e4d"></a>
+<a id="orgfa434fc"></a>
 
 ## We need the data to be sent over as a metric
 
 
-<a id="org92a77c7"></a>
+<a id="org5e84da3"></a>
 
 ### A Metric is just the numerator and denominator that the user chooses.
 
 
-<a id="org283418e"></a>
+<a id="org81c24bf"></a>
 
 ## Once this is sent over the picker resets
 
 
-<a id="orgc422bb1"></a>
+<a id="org96d8401"></a>
 
 # Data Form
 
 
-<a id="org966c188"></a>
+<a id="org399726b"></a>
 
 ## The data form is what the user will be able to choose the order of everything.
 
 
-<a id="org5f1619a"></a>
+<a id="org123b21f"></a>
 
 ## THIS WILL BE THE FINAL PUSH TO DB
 
 
-<a id="orge51eca1"></a>
+<a id="org8e5133e"></a>
 
 ## The categories and the metrics need to be able to be changed around. This requires drag and drop capabilities to occur.
 
 
-<a id="orgc73614c"></a>
+<a id="orgc1b0b63"></a>
 
 ## The format is :
 
 
-<a id="org34c514f"></a>
+<a id="orgc7d1530"></a>
 
 ### { { Categories { Metric Id } } Metrics { MetricObj } }
 
 
-<a id="org1386f49"></a>
+<a id="org530127d"></a>
 
 ### This is containing the orders and the MetricIds, it will then contain all the information of the metrics that the first portion will reference.
 
 
-<a id="org5ee0d65"></a>
+<a id="orge3d841f"></a>
 
 ## The Data Form Needs the ability to have the following Handles (@ First Glance)
 
 
-<a id="org5f6657e"></a>
+<a id="org7499098"></a>
 
 ### Order States
 
 
-<a id="org0ac164c"></a>
+<a id="org9ba46a7"></a>
 
 ### Removing Metric
 
 
-<a id="orge66bec8"></a>
+<a id="orgc309140"></a>
 
 ### Collapse States (Category and Metric?)
 
 1.  QUESTION : Do we want category to collapse initially? I mean we don&rsquo;t really need it IMO. But we still might need some container to hold nested collapsible things
 
 
-<a id="orga173584"></a>
+<a id="org8a408be"></a>
 
 ### Dragging? | dependent on the React DnD setup
 
 
-<a id="org2527627"></a>
+<a id="org829f201"></a>
 
 ### nrf
 

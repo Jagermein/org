@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Overview](#org420cc18)
-2.  [ContextualForm Component](#org454b63d)
-    1.  [Purpose](#org12021eb)
-    2.  [Key Behaviors](#org6490655)
-    3.  [Code Reference](#org0c5bffa)
-3.  [useForm vs useFormContext](#org7dd4b63)
-    1.  [useForm](#orgfe53d4a)
-    2.  [useFormContext](#orgd3a3aec)
-4.  [Why not use useForm everywhere?](#org10ac5dc)
-5.  [Controlled Selects and useEffect](#orgfd0fa92)
-6.  [Example Pattern](#org1b561d8)
+1.  [Overview](#orgebb17b4)
+2.  [ContextualForm Component](#org436e3fd)
+    1.  [Purpose](#orgc6c8fc1)
+    2.  [Key Behaviors](#org3250028)
+    3.  [Code Reference](#orgd0cfbd4)
+3.  [useForm vs useFormContext](#org99aab80)
+    1.  [useForm](#org51eb0bc)
+    2.  [useFormContext](#org7bad400)
+4.  [Why not use useForm everywhere?](#orgb71179f)
+5.  [Controlled Selects and useEffect](#orgfb852c2)
+6.  [Example Pattern](#orga380220)
 
 :ID:       2ca1e0f6-bf1f-4a61-a680-b263dea95426
 
 
-<a id="org420cc18"></a>
+<a id="orgebb17b4"></a>
 
 # Overview
 
@@ -25,19 +25,19 @@ This note describes how the app handles complex forms using \`react-hook-form\` 
 Instead of calling \`useForm()\` in each field component (which would create multiple isolated forms), the app wraps all form content in a shared \`ContextualForm\`, allowing nested components to access the same form state via \`useFormContext()\`.
 
 
-<a id="org454b63d"></a>
+<a id="org436e3fd"></a>
 
 # ContextualForm Component
 
 
-<a id="org12021eb"></a>
+<a id="orgc6c8fc1"></a>
 
 ## Purpose
 
 Creates a single RHF form context and provides it to all nested components.
 
 
-<a id="org6490655"></a>
+<a id="org3250028"></a>
 
 ## Key Behaviors
 
@@ -47,19 +47,19 @@ Creates a single RHF form context and provides it to all nested components.
 -   Wraps children in `FormProvider`, allowing access to RHF context using `useFormContext()`.
 
 
-<a id="org0c5bffa"></a>
+<a id="orgd0cfbd4"></a>
 
 ## Code Reference
 
 <file:///Users/chancenorris/your-path-to/contextualForm.js>
 
 
-<a id="org7dd4b63"></a>
+<a id="org99aab80"></a>
 
 # useForm vs useFormContext
 
 
-<a id="orgfe53d4a"></a>
+<a id="org51eb0bc"></a>
 
 ## useForm
 
@@ -68,7 +68,7 @@ Creates a single RHF form context and provides it to all nested components.
 -   Should NOT be used in nested components (would create disconnected state).
 
 
-<a id="orgd3a3aec"></a>
+<a id="org7bad400"></a>
 
 ## useFormContext
 
@@ -77,7 +77,7 @@ Creates a single RHF form context and provides it to all nested components.
 -   Enables registering fields, watching values, and using validation.
 
 
-<a id="org10ac5dc"></a>
+<a id="orgb71179f"></a>
 
 # Why not use useForm everywhere?
 
@@ -86,7 +86,7 @@ Creates a single RHF form context and provides it to all nested components.
 -   Best practice is to call `useForm()` once and access it with `useFormContext()`.
 
 
-<a id="orgfd0fa92"></a>
+<a id="orgfb852c2"></a>
 
 # Controlled Selects and useEffect
 
@@ -94,7 +94,7 @@ Creates a single RHF form context and provides it to all nested components.
 -   Avoid setting state inline during render; use `useEffect` for that.
 
 
-<a id="org1b561d8"></a>
+<a id="orga380220"></a>
 
 # Example Pattern
 

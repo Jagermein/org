@@ -1,27 +1,27 @@
 
 # Table of Contents
 
-1.  [Database Structure](#org43dbb74)
-    1.  [airspace](#org01f629c)
-    2.  [events](#org56831a4)
-    3.  [aircraft](#orgf6d9bc0)
-    4.  [MarkerType](#orgb71a0cf)
+1.  [Database Structure](#orgce45ea2)
+    1.  [airspace](#org0345159)
+    2.  [events](#org939d677)
+    3.  [aircraft](#org6ddb4ca)
+    4.  [MarkerType](#org16fcc35)
 
 :ID:       8c46f3d3-2b5b-448b-8c1e-9513bdf8f159
 
 
-<a id="org43dbb74"></a>
+<a id="orgce45ea2"></a>
 
 # Database Structure
 
 The Database structure section will go over what our current DB structure looks like. This will go over the data types, as well as the tables. Within each table, there can be sections/columns/etc. that are called into another, which will will try to highlight here.
 
 
-<a id="org01f629c"></a>
+<a id="org0345159"></a>
 
 ## airspace
 
-Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [events](#org56831a4). These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
+Airspace is exactly what it sounds like. This is the airspace that users have alreayd specified, which can easily be referenced in other fields such as [events](#org939d677). These can have spcifications such as floor, targets, boundaries, etc. Below are the fields we currently care about (subject to change).
 
 -   id [uuid] : unique id for the airspace
 -   name [string] : name for the airspace
@@ -29,7 +29,7 @@ Airspace is exactly what it sounds like. This is the airspace that users have al
 -   targets[{{}}] : an object of objects that specify the name, location of targets that are in the airspace. this is usually specified for stationary targets that persist in the airspace/range.
 
 
-<a id="org56831a4"></a>
+<a id="org939d677"></a>
 
 ## events
 
@@ -42,7 +42,7 @@ Events is where we are storing each event that has occured. An event is what is 
 -   airspaceName [string] : reference to the airspace name
 
 
-<a id="orgf6d9bc0"></a>
+<a id="org6ddb4ca"></a>
 
 ## aircraft
 
@@ -57,7 +57,7 @@ Aircraft is self explainatory. This is where users created aircraft are stored. 
 -   software [string] : the software the tms/mds is using.
 
 
-<a id="orgb71a0cf"></a>
+<a id="org16fcc35"></a>
 
 ## MarkerType
 
